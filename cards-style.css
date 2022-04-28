@@ -1,0 +1,124 @@
+.main-container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-areas:
+			"banner-valorant banner-valorant banner-valorant banner-valorant"
+			"jogador-1 jogador-2 jogador-3 jogador-4";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 250px 1fr;
+	grid-row-gap: 10px;
+}
+
+.banner-valorant {
+	grid-area: banner-valorant;
+}
+
+.jogador-1 {
+	grid-area: jogador-1;
+	
+}
+
+.jogador-2 {
+	grid-area: jogador-2;
+}
+
+.jogador-3 {
+	grid-area: jogador-3;
+}
+
+.jogador-4 {
+	grid-area: jogador-4;
+}
+
+.player-card {
+	display: grid;
+	grid-template-areas:
+			"player-img player-info";
+	grid-template-columns: 120px 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 10px;
+}
+
+.player-img {
+	grid-area: player-img;
+}
+
+.player-info {
+	grid-area: player-info;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /* eixo vertical */
+	justify-content: center; /* eixo horizontal */
+}
+
+.itens {
+	font-family: consolas;
+	margin-top: 2px;
+}
+
+.player-card2 {
+	display: grid;
+	grid-template-areas:
+				"player-img2 player-info2 " ;
+	grid-template-columns: 120px 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 10px;			
+
+}
+
+.player-img2 {
+	grid-area: player-img2;
+}
+
+
+.player-info2{
+	grid-area: player-info2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+}
+
+.player-img3{
+	grid-area:player-img3;
+}
+.player-card3 {
+	display: grid;
+	grid-template-areas: 
+					"player-img3 player-info3";
+	grid-template-columns:120px 1fr ;									
+	grid-template-rows: 1fr;
+	grid-column-gap: 10px;
+}
+
+.player-info3 {
+	grid-area: player-info3;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+}
+
+.player-img4{
+	grid-area:player-img4;
+}
+.player-card4 {
+	display: grid;
+	grid-template-areas: 
+					"player-img4 player-info4";
+	grid-template-columns:120px 1fr ;									
+	grid-template-rows: 1fr;
+	grid-column-gap: 10px;
+}
+
+.player-info4 {
+	grid-area: player-info4;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+}
